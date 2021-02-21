@@ -1,11 +1,19 @@
 // Build a Car class!
 
-function add(a, b) {
-  return a + b;
+function add(...args) {
+  if (!args) {
+    return 0;
+  } else {
+    return args.reduce((a, b) => {
+      return a + b;
+    }, 0);
+  }
 }
 
 function multiply(a, b) {
-  return a * b;
+  if (a && b) {
+    return a * b;
+  }
 }
 
 function average() {

@@ -11,6 +11,13 @@ describe("add", () => {
     //assert results
     expect(actual).toBe(expectedValue);
   });
+  test("add a collection of values ", () => {});
+  test("return 0 when called with no values ", () => {
+    expect(add()).toBe(0);
+  });
+  test.skip("value is a number ", () => {
+    expect(add(2, 1).not.toBe(NaN));
+  });
 });
 
 describe("multiply", () => {
