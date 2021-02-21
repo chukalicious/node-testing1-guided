@@ -15,19 +15,12 @@ describe("add", () => {
 
 describe("multiply", () => {
   test("should multiply two numbers", () => {
-    //set-up - Arrange
-    const expectedValue = 2;
-    //execute code under test - Act
-    const actual = multiply(2, 1);
-    //assert results
-    expect(actual).toBe(expectedValue);
+    expect(multiply(2, 1)).toBe(2);
   });
 });
 
 describe("average", () => {
   test("should find the average of the sum on an array", () => {
-    const expected = 2;
-    const actual = average();
-    expect(actual).toBe(expected);
+    expect(average()).toBe(2);
   });
 });
