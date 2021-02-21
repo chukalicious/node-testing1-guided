@@ -1,6 +1,6 @@
 // Test away!
 
-const { add, multiply } = require("./math");
+const { add, multiply, average } = require("./math");
 
 describe("add", () => {
   test("should add two numbers", () => {
@@ -21,5 +21,13 @@ describe("multiply", () => {
     const actual = multiply(2, 1);
     //assert results
     expect(actual).toBe(expectedValue);
+  });
+});
+
+describe("average", () => {
+  test("should find the average of the sum on an array", () => {
+    const expected = 2;
+    const actual = average();
+    expect(actual).toBe(expected);
   });
 });
